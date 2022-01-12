@@ -37,8 +37,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }: GetStaticPropsContext) => {
+  console.log(params);
   const result = await fetch(
-    `${process.env.HOST}/api/countries/${
+    `https://next-js-static-saas-pierreberger.vercel.app/api/countries/${
       process.env.PLATFORM === 'local' ? process.env.DEFAULT_COUNTRY_URL : params?.country?.toString().replace(':3000','')
     }`
   );

@@ -21,5 +21,12 @@ export const countries: Country[] = [
       background: 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Statue_of_Liberty%2C_NY_%28cropped%29.jpg',
       url: 'usa.us',
       favicon: 'usa.png'
+    },
+    {
+      id: 'vercel',
+      name: 'Test vercel',
+      background: 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Statue_of_Liberty%2C_NY_%28cropped%29.jpg',
+      url: 'next-js-static-saas.vercel.app',
+      favicon: 'usa.png'
     }
 ]
